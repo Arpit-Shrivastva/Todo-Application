@@ -76,12 +76,6 @@ Following mat-icons should be used for displaying the priority levels while addi
 |Medium|remove_circle_outline|
 |Low|arrow_circle_down|
 
-In the `note.component.html`, priority levels should be displayed next to note title using these mat-icons and `*ngIf` directive.​
-```html
-    <button *ngIf="note?.priority==='Critical'" color="accent" mat-icon-button>
-    <mat-icon>gpp_maybe</mat-icon>
-    </button>
-```
 
 #### Points to Remember
 - In this phase, the solution created for the Keep Note application in the previous sprint `Style a Single-Page Application Using Angular Material` must be used to enhance the add note form.​
@@ -118,19 +112,3 @@ In the `note.component.html`, priority levels should be displayed next to note t
 **Newly Added note in card**
 
 ![](./screenshots/Keep-Note-newly-added-note-in-card.png)
-
-
-### Submission Instructions
-
-#### Test the solution locally
-- Test the solution first locally and then on `CodeReview` platform. Steps to test the code locally are:​
-    - From the command line terminal, set the path to the folder containing cloned boilerplate code.​
-    - un the command ng test or npm run test to test the solution locally and ensure all the test cases pass.​
-    - Refactor the solution code if the test cases are failing and do a re-run.​​
-    - Finally, push the solution to git for automated testing on `CodeReview` platform.​
-
-#### Test the Solution on `CodeReview` platform
-Steps to test the code on hobbes are:​
-- Open the submission page at `https://codereview.stackroute.niit.com/#/submission`.​
-- Submit the solution.​
-- For the failed test cases, refactor the code locally and submit it for re-evaluation.​
