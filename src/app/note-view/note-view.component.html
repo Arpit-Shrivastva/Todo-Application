@@ -1,0 +1,9 @@
+<div>
+    <app-note-add (NoteAdded)="onNoteAdded($event)"></app-note-add>
+</div>
+<div>
+    <app-search (searchText)="onSearchText($event)"></app-search>
+</div>
+<div id="flex">
+    <app-note *ngFor="let note of notes" [Note]="note"></app-note>
+</div>
